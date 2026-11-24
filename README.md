@@ -1,7 +1,6 @@
 # Yugal Sunil Patil — Portfolio
 
-A small static portfolio built with plain HTML, CSS, and JavaScript. Its layout is inspired by kien.app; the copy, project information, and screenshots are Yugal's.
-
+A small static portfolio built with plain HTML, CSS, and JavaScript.
 ## Run locally
 
 From this folder, start a local server:
