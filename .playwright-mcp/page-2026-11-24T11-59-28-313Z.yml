@@ -1,0 +1,143 @@
+- generic [active] [ref=f15e1]:
+  - banner [ref=f15e2]:
+    - link "Yugal Sunil Patil, home" [ref=f15e3] [cursor=pointer]:
+      - /url: "#home"
+      - text: Yugal Sunil Patil
+    - navigation "Main navigation" [ref=f15e4]:
+      - link "Works" [ref=f15e5] [cursor=pointer]:
+        - /url: "#work"
+      - link "Skills" [ref=f15e6] [cursor=pointer]:
+        - /url: "#skills"
+      - link "About" [ref=f15e7] [cursor=pointer]:
+        - /url: "#about"
+      - link "Contact" [ref=f15e8] [cursor=pointer]:
+        - /url: "#contact"
+    - link "Open to opportunities" [ref=f15e9] [cursor=pointer]:
+      - /url: "#contact"
+  - main [ref=f15e10]:
+    - region "I build digital products." [ref=f15e11]:
+      - generic [ref=f15e12]: PORTFOLIO / 2026BTECH CSE / YEAR 02
+      - paragraph [ref=f15e13]: Computer science student · Builder
+      - heading "I build digital products." [level=1] [ref=f15e14]:
+        - generic [ref=f15e15]: I build
+        - generic [ref=f15e16]: digital
+        - generic [ref=f15e17]: products.
+      - paragraph [ref=f15e19]: I’m Yugal, a second-year BTech CSE student. I make software to explore ideas, solve small problems, and learn by building.
+      - figure "NEBULITH / INTERACTIVE PLANETARY EXPLORER" [ref=f15e20]:
+        - img "Earth in the NEBULITH planetary explorer" [ref=f15e21]
+      - link "SCROLL TO EXPLORE →" [ref=f15e23] [cursor=pointer]:
+        - /url: "#work"
+    - region "Works" [ref=f15e24]:
+      - generic [ref=f15e25]:
+        - generic [ref=f15e26]:
+          - paragraph [ref=f15e27]: A selection of things I’ve made
+          - heading "Works" [level=2] [ref=f15e28]
+        - paragraph [ref=f15e29]: Software, tools,and experiments.
+      - generic [ref=f15e30]:
+        - article [ref=f15e31]:
+          - generic [ref=f15e32]:
+            - heading "NEBULITH" [level=3] [ref=f15e33]
+            - paragraph [ref=f15e34]: An interactive planetary explorer growing into a research workspace for comparing Earth locations with the Moon and Mars.
+            - generic [ref=f15e35]:
+              - link "Live project ↗" [ref=f15e36] [cursor=pointer]:
+                - /url: https://nebulith.netlify.app/
+              - link "Source ↗" [ref=f15e37] [cursor=pointer]:
+                - /url: https://github.com/yugal-07/NEBULITH
+            - button "More about this" [ref=f15e38] [cursor=pointer]
+          - generic [ref=f15e39]: React / Three.js / FastAPI
+        - article [ref=f15e41]:
+          - generic [ref=f15e42]:
+            - heading "VisionVault" [level=3] [ref=f15e43]
+            - paragraph [ref=f15e44]: A local-first photo library for finding images by face, designed to keep the library and face data on your machine.
+            - link "Source ↗" [ref=f15e46] [cursor=pointer]:
+              - /url: https://github.com/yugal-07/VisionVault
+            - button "More about this" [ref=f15e47] [cursor=pointer]
+          - generic [ref=f15e48]: Java / ONNX
+        - article [ref=f15e50]:
+          - generic [ref=f15e51]:
+            - heading "AscentOptima" [level=3] [ref=f15e52]
+            - paragraph [ref=f15e53]: A campus elevator simulation for exploring dispatch strategies, demand spikes, and what-if scenarios.
+            - link "Source ↗" [ref=f15e55] [cursor=pointer]:
+              - /url: https://github.com/udbhav-metla/AscentOptima
+            - button "More about this" [ref=f15e56] [cursor=pointer]
+          - generic [ref=f15e57]: React / TypeScript / Three.js
+        - figure "NEBULITH / ROVER MOBILITY DIGITAL TWIN INTERFACE PREVIEW" [ref=f15e59]:
+          - img "NEBULITH rover mobility digital twin, showing a rover terrain scene, environment controls, and telemetry" [ref=f15e60]
+          - generic [ref=f15e61]:
+            - generic [ref=f15e62]: NEBULITH / ROVER MOBILITY DIGITAL TWIN
+            - generic [ref=f15e63]: INTERFACE PREVIEW
+        - article [ref=f15e64]:
+          - generic [ref=f15e65]:
+            - heading "WordFetch" [level=3] [ref=f15e66]
+            - paragraph [ref=f15e67]: "A tiny desktop utility: highlight a word, press a hotkey, and get its definition without leaving what you’re doing."
+            - link "Source ↗" [ref=f15e69] [cursor=pointer]:
+              - /url: https://github.com/yugal-07/WordFetch
+            - button "More about this" [ref=f15e70] [cursor=pointer]
+          - generic [ref=f15e71]: Python
+      - generic [ref=f15e73]:
+        - generic [ref=f15e74]:
+          - generic [ref=f15e75]: SMALLER EXPERIMENTS
+          - generic [ref=f15e76]: 01—04
+        - link "URL shortener Python / project repository ↗" [ref=f15e77] [cursor=pointer]:
+          - /url: https://github.com/yugal-07/more-stuff
+          - generic [ref=f15e78]: URL shortener
+          - generic [ref=f15e79]: Python / project repository ↗
+        - link "Cricket scoreboard C++ / project repository ↗" [ref=f15e80] [cursor=pointer]:
+          - /url: https://github.com/yugal-07/Cricket_Match_Scoreboard_Application
+          - generic [ref=f15e81]: Cricket scoreboard
+          - generic [ref=f15e82]: C++ / project repository ↗
+        - link "Text to Handwriting React / TypeScript / project repository ↗" [ref=f15e83] [cursor=pointer]:
+          - /url: https://github.com/yugal-07/vibe-coded-Projects/tree/main/text-to-handwriting
+          - generic [ref=f15e84]: Text to Handwriting
+          - generic [ref=f15e85]: React / TypeScript / project repository ↗
+        - link "Humanizer Client + server / project repository ↗" [ref=f15e86] [cursor=pointer]:
+          - /url: https://github.com/yugal-07/vibe-coded-Projects/tree/main/humanizer
+          - generic [ref=f15e87]: Humanizer
+          - generic [ref=f15e88]: Client + server / project repository ↗
+    - region "Skills" [ref=f15e89]:
+      - generic [ref=f15e90]:
+        - generic [ref=f15e91]:
+          - paragraph [ref=f15e92]: Tools used across my projects
+          - heading "Skills" [level=2] [ref=f15e93]
+        - paragraph [ref=f15e94]: Things I’ve learnedby making.
+      - generic [ref=f15e95]:
+        - generic [ref=f15e96]:
+          - generic [ref=f15e97]: FRONTEND
+          - paragraph [ref=f15e98]: React · TypeScript · Three.js · JavaScript · CSS
+        - generic [ref=f15e99]:
+          - generic [ref=f15e100]: BACKEND & SYSTEMS
+          - paragraph [ref=f15e101]: Python · FastAPI · Java · C++ · SQLite
+        - generic [ref=f15e102]:
+          - generic [ref=f15e103]: INTERESTS
+          - paragraph [ref=f15e104]: Interactive systems · 3D on the web · Local-first software
+    - region "Learning by making real things." [ref=f15e105]:
+      - generic [ref=f15e106]: 01 / A LITTLE CONTEXTTHE PERSON BEHIND THE BUILDS
+      - generic [ref=f15e107]:
+        - heading [level=2] [ref=f15e108]:
+          - text: Learning bymaking
+          - emphasis [ref=f15e109]: real things.
+        - generic [ref=f15e110]:
+          - paragraph [ref=f15e111]: I’m studying Computer Science and Engineering, and I learn best when I can take an idea apart and build a version of it myself.
+          - paragraph [ref=f15e112]: "My projects tend to sit where software meets something tangible: a planet you can explore, an elevator system you can simulate, or a small tool that makes an everyday task quicker."
+          - paragraph [ref=f15e113]: Currently studying, experimenting, and figuring out what to build next.
+      - generic [ref=f15e115]:
+        - generic [ref=f15e116]: TOOLS I’VE USED IN THESE PROJECTS
+        - paragraph [ref=f15e117]: React · TypeScript · Three.js · Python · Java · C++
+    - generic [ref=f15e118]:
+      - paragraph [ref=f15e119]: Have something interesting in mind?
+      - heading [level=2] [ref=f15e120]:
+        - text: Let’s make
+        - emphasis [ref=f15e121]: something useful.
+      - paragraph [ref=f15e122]: I’m open to conversations about projects, internships, and good problems to learn from.
+      - generic [ref=f15e123]:
+        - generic [ref=f15e124]: Email link not added yet
+        - link "GITHUB ↗" [ref=f15e125] [cursor=pointer]:
+          - /url: https://github.com/yugal-07
+        - generic [ref=f15e126]: LinkedIn link not added yet
+        - link "BACK TO TOP ↑" [ref=f15e127] [cursor=pointer]:
+          - /url: "#home"
+  - contentinfo [ref=f15e128]:
+    - link "Yugal Sunil Patil" [ref=f15e129] [cursor=pointer]:
+      - /url: "#home"
+    - generic [ref=f15e130]: DESIGNED & BUILT WITH CURIOSITY
+    - generic [ref=f15e131]: © 2026

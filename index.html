@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#171a19" />
+    <meta name="description" content="Yugal Sunil Patil is a second-year BTech Computer Science student building thoughtful software and interactive systems." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Yugal Sunil Patil — student & builder" />
+    <meta property="og:description" content="A second-year BTech CSE student building thoughtful software and interactive systems." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Yugal Sunil Patil — student & builder" />
+    <meta name="twitter:description" content="A second-year BTech CSE student building thoughtful software and interactive systems." />
+    <title>Yugal Sunil Patil — student & builder</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ctext x='3' y='31' font-family='Arial,sans-serif' font-size='35' font-weight='bold' fill='%23e8e7e2'%3Ey%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500;600&family=Unbounded:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <svg class="reading-progress" aria-hidden="true" focusable="false"><path></path><circle r="3"></circle></svg>
+    <header class="topbar">
+      <a class="wordmark" href="#home" aria-label="Yugal Sunil Patil, home">Yugal Sunil Patil</a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Works</a>
+         <a href="#skills">Skills</a>
+         <a href="#about">About</a>
+         <a href="#contact">Contact</a>
+         <button class="terminal-launch" type="button" aria-label="Open terminal" aria-controls="hero-terminal" aria-expanded="false" title="Open terminal">&gt;_</button>
+      </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu <span aria-hidden="true">＋</span></button>
+      <a class="availability" href="#contact">Open to opportunities</a>
+    </header>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <a href="#work">01 <span>Works</span></a>
+      <a href="#skills">02 <span>Skills</span></a>
+      <a href="#about">03 <span>About</span></a>
+      <a href="#contact">04 <span>Contact</span></a>
+    </nav>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="intro-title">
+        <p class="eyebrow">Computer science student <span>·</span> Builder</p>
+        <h1 id="intro-title"><span>Yugal Patil</span></h1>
+        <div class="hero-bottom">
+          <p class="intro-copy">I’m Yugal, a second-year BTech CSE student. I make software to explore ideas, solve small problems, and learn by building.</p>
+          <a class="round-link" href="#work" aria-label="Explore selected work">↓</a>
+          <span class="side-note">SCROLL TO EXPLORE<br />↓</span>
+        </div>
+        <div class="hero-visual">
+          <canvas class="ascii-portrait" role="img" aria-label="Interactive ASCII portrait of Yugal Patil">ASCII portrait of Yugal Patil.</canvas>
+          <div class="terminal" id="hero-terminal" role="region" aria-label="Interactive terminal" hidden>
+            <div class="terminal-bar"><span>&gt;_ TERMINAL</span><span class="terminal-controls"><i aria-hidden="true">−</i><i aria-hidden="true">□</i><button class="terminal-close" type="button" aria-label="Close terminal">×</button></span></div>
+            <div class="terminal-body">
+              <dl class="terminal-stats"><div><dt>TIME</dt><dd class="terminal-time">--:--:--</dd></div><div><dt>STATUS</dt><dd><span class="terminal-status-dot">●</span> ONLINE</dd></div><div><dt>UPTIME</dt><dd class="terminal-uptime">--.-------- years</dd></div></dl>
+              <div class="terminal-output" aria-live="polite"><p>Type “help” to see commands.</p></div>
+              <form class="terminal-form"><span aria-hidden="true">»</span><label class="terminal-label" for="terminal-input">Terminal command</label><input id="terminal-input" name="command" type="text" autocomplete="off" spellcheck="false" /></form>
+            </div>
+          </div>
+        </div>
+        <a class="hero-contact" href="#work">SCROLL TO EXPLORE <span>→</span></a>
+      </section>
+
+      <section class="work section-wrap" id="work" aria-labelledby="work-title">
+        <div class="section-heading"><div><p class="eyebrow">A selection of things I’ve made</p><h2 id="work-title">Works</h2></div><p class="section-aside">Software, tools,<br />and experiments.</p></div>
+        <div class="project-list">
+          <article class="project project-nebulith">
+            <div class="project-index">01 <span>IN PROGRESS</span></div>
+            <div class="project-content"><h3>NEBULITH</h3><p>An interactive planetary explorer growing into a research workspace for comparing Earth locations with the Moon and Mars.</p><div class="project-links"><a href="https://nebulith.netlify.app/" target="_blank" rel="noreferrer">Live project ↗</a><a href="https://github.com/yugal-07/NEBULITH" target="_blank" rel="noreferrer">Source ↗</a></div><button class="detail-toggle" aria-expanded="false">More about this <span>＋</span></button><div class="project-detail" hidden><p>Built with React, TypeScript, Three.js, and a FastAPI backend. The globe supports Earth, the Moon, and Mars; research workflows are still being developed, so the project is a foundation rather than a finished scientific tool.</p></div></div>
+            <a class="project-art art-nebulith project-image" href="https://nebulith.netlify.app/" target="_blank" rel="noreferrer" aria-label="Open NEBULITH planetary explorer"><img src="assets/nebulith-explorer.jpg" alt="NEBULITH planetary explorer interface with an interactive Earth globe" loading="lazy" /><span class="image-open">OPEN PROJECT ↗</span></a>
+            <div class="project-foot"><span>Interactive 3D · Research tools</span><span>React / Three.js / FastAPI</span></div>
+          </article>
+
+            <article class="project project-vision">
+            <div class="project-index">02 <span>DESKTOP APP</span></div>
+            <div class="project-content"><h3>VisionVault</h3><p>A local-first photo library for finding images by face, designed to keep the library and face data on your machine.</p><div class="project-links"><a href="https://github.com/yugal-07/VisionVault" target="_blank" rel="noreferrer">Source ↗</a></div><button class="detail-toggle" aria-expanded="false">More about this <span>＋</span></button><div class="project-detail" hidden><p>Java desktop app: imports and copies photos without altering originals, detects faces, and searches using a reference image or camera capture. Face embeddings are sensitive biometric data; use with consent and protect the local library.</p></div></div>
+            <div class="project-art art-vision" aria-hidden="true"><div class="vault-window"><div class="window-top"><i></i><i></i><i></i><span>LOCAL PHOTO LIBRARY</span></div><div class="photo-grid"><b>◉</b><b>◌</b><b>◉</b><b>◌</b><b>◌</b><b>◉</b></div></div></div>
+            <div class="project-foot"><span>Photo library · Face similarity search</span><span>Java / ONNX</span></div>
+          </article>
+
+          <article class="project project-ascent">
+            <div class="project-index">03 <span>SIMULATION</span></div>
+            <div class="project-content"><h3>AscentOptima</h3><p>A campus elevator simulation for exploring dispatch strategies, demand spikes, and what-if scenarios.</p><div class="project-links"><a href="https://github.com/udbhav-metla/AscentOptima" target="_blank" rel="noreferrer">Source ↗</a></div><button class="detail-toggle" aria-expanded="false">More about this <span>＋</span></button><div class="project-detail" hidden><p>The project combines a Three.js campus visualization with configurable simulation controls and performance metrics. Published benchmark claims need independent verification; this portfolio describes the project without asserting those results.</p></div></div>
+            <div class="project-art art-ascent" aria-hidden="true"><div class="building"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="lift-path"><b></b></div><div class="lift-path path-two"><b></b></div><span class="floor-label">FLOOR 06<br />────────<br />FLOOR 01</span></div>
+            <div class="project-foot"><span>Digital twin · Scenario testing</span><span>React / TypeScript / Three.js</span></div>
+          </article>
+
+          <article class="project project-wordfetch">
+            <div class="project-index">04 <span>LINUX TOOL</span></div>
+            <div class="project-content"><h3>WordFetch</h3><p>A tiny desktop utility: highlight a word, press a hotkey, and get its definition without leaving what you’re doing.</p><div class="project-links"><a href="https://github.com/yugal-07/WordFetch" target="_blank" rel="noreferrer">Source ↗</a></div><button class="detail-toggle" aria-expanded="false">More about this <span>＋</span></button><div class="project-detail" hidden><p>Python tool for Linux that reads the primary selection, checks a bundled local dictionary, and shows a desktop notification. It works offline and avoids the copy-and-paste round trip.</p></div></div>
+            <div class="project-art art-wordfetch" aria-hidden="true"><div class="definition-card"><small>WORD / 024</small><strong>serendipity</strong><span>/ˌser.ənˈdɪp.ə.ti/</span><hr /><p>finding something good<br />without looking for it.</p><kbd>CTRL</kbd><kbd>M</kbd></div></div>
+            <div class="project-foot"><span>Desktop utility · Offline dictionary</span><span>Python</span></div>
+          </article>
+        </div>
+        <p class="work-note">A few other experiments are still taking shape. I’d rather show fewer things with a clear story than fill the page for the sake of it.</p>
+        <div class="experiments">
+          <div class="experiments-heading"><span>SMALLER EXPERIMENTS</span><span>01—04</span></div>
+          <a href="https://github.com/yugal-07/more-stuff" target="_blank" rel="noreferrer"><span>URL shortener</span><span>Python / project repository ↗</span></a>
+          <a href="https://github.com/yugal-07/Cricket_Match_Scoreboard_Application" target="_blank" rel="noreferrer"><span>Cricket scoreboard</span><span>C++ / project repository ↗</span></a>
+          <a href="https://github.com/yugal-07/vibe-coded-Projects/tree/main/text-to-handwriting" target="_blank" rel="noreferrer"><span>Text to Handwriting</span><span>React / TypeScript / project repository ↗</span></a>
+          <a href="https://github.com/yugal-07/vibe-coded-Projects/tree/main/humanizer" target="_blank" rel="noreferrer"><span>Humanizer</span><span>Client + server / project repository ↗</span></a>
+        </div>
+      </section>
+
+      <section class="skills section-wrap" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading"><div><p class="eyebrow">Tools used across my projects</p><h2 id="skills-title">Skills</h2></div><p class="section-aside">Things I’ve learned<br />by making.</p></div>
+        <div class="skill-list">
+          <div><span>FRONTEND</span><p>React <b>·</b> TypeScript <b>·</b> Three.js <b>·</b> JavaScript <b>·</b> CSS</p></div>
+          <div><span>BACKEND & SYSTEMS</span><p>Linux <b>·</b> Python <b>·</b> FastAPI <b>·</b> Java <b>·</b> C++ <b>·</b> SQLite</p></div>
+          <div><span>INTERESTS</span><p>Interactive systems <b>·</b> 3D on the web <b>·</b> Local-first software</p></div>
+        </div>
+      </section>
+
+      <section class="about section-wrap" id="about" aria-labelledby="about-title">
+        <div class="about-label"><span>01 / A LITTLE CONTEXT</span><span>THE PERSON BEHIND THE BUILDS</span></div>
+        <div class="about-main"><h2 id="about-title">Learning by<br />making <em>real things.</em></h2><div class="about-copy"><p>I’m studying Computer Science and Engineering, and I learn best when I can take an idea apart and build a version of it myself.</p><p>My projects tend to sit where software meets something tangible: a planet you can explore, an elevator system you can simulate, or a small tool that makes an everyday task quicker.</p><p class="currently"><span class="currently-dot"></span> Currently studying, experimenting, and figuring out what to build next.</p></div></div>
+        <div class="interest-row"><span>TOOLS I’VE USED IN THESE PROJECTS</span><p>React <b>·</b> TypeScript <b>·</b> Three.js <b>·</b> Linux <b>·</b> Python <b>·</b> Java <b>·</b> C++</p></div>
+      </section>
+
+      <section class="contact section-wrap" id="contact">
+        <p class="eyebrow">Have something interesting in mind?</p><h2>Let’s make<br /><em>something useful.</em></h2>
+        <p class="contact-note">I’m open to conversations about projects, internships, and good problems to learn from.</p>
+        <div class="contact-bottom"><a class="social-link" href="mailto:patilyugal2007@gmail.com">patilyugal2007@gmail.com</a><a class="social-link" href="https://github.com/yugal-07" target="_blank" rel="noreferrer">GITHUB ↗</a><span class="social-missing">LinkedIn link not added yet</span><a class="back-top" href="#home">BACK TO TOP ↑</a></div>
+      </section>
+    </main>
+    <footer><a class="wordmark" href="#home">Yugal Sunil Patil</a><span>DESIGNED & BUILT WITH CURIOSITY</span><span>© 2026</span></footer>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+- generic [active] [ref=f2e1]:
+  - banner [ref=f2e2]:
+    - link "Yugal Sunil Patil, home" [ref=f2e3] [cursor=pointer]:
+      - /url: "#home"
+      - text: Yugal Sunil Patil
+    - navigation "Main navigation" [ref=f2e4]:
+      - link "Works" [ref=f2e5] [cursor=pointer]:
+        - /url: "#work"
+      - link "Skills" [ref=f2e6] [cursor=pointer]:
+        - /url: "#skills"
+      - link "About" [ref=f2e7] [cursor=pointer]:
+        - /url: "#about"
+      - link "Contact" [ref=f2e8] [cursor=pointer]:
+        - /url: "#contact"
+      - button "Open terminal" [ref=f2e9]: ">_"
+  - main [ref=f2e10]:
+    - region "I build digital products." [ref=f2e11]:
+      - paragraph [ref=f2e12]: Computer science student · Builder
+      - heading "I build digital products." [level=1] [ref=f2e13]: I builddigitalproducts.
+      - paragraph [ref=f2e15]: I’m Yugal, a second-year BTech CSE student. I make software to explore ideas, solve small problems, and learn by building.
+      - img "Interactive ASCII portrait of Yugal Patil" [ref=f2e17]: ASCII portrait of Yugal Patil.
+      - link "SCROLL TO EXPLORE →" [ref=f2e18] [cursor=pointer]:
+        - /url: "#work"
+    - region "Works" [ref=f2e19]:
+      - generic [ref=f2e20]:
+        - generic [ref=f2e21]:
+          - paragraph [ref=f2e22]: A selection of things I’ve made
+          - heading "Works" [level=2] [ref=f2e23]
+        - paragraph [ref=f2e24]: Software, tools,and experiments.
+      - generic [ref=f2e25]:
+        - article [ref=f2e26]:
+          - generic [ref=f2e27]:
+            - heading "NEBULITH" [level=3] [ref=f2e28]
+            - paragraph [ref=f2e29]: An interactive planetary explorer growing into a research workspace for comparing Earth locations with the Moon and Mars.
+            - generic [ref=f2e30]:
+              - link "Live project ↗" [ref=f2e31] [cursor=pointer]:
+                - /url: https://nebulith.netlify.app/
+              - link "Source ↗" [ref=f2e32] [cursor=pointer]:
+                - /url: https://github.com/yugal-07/NEBULITH
+            - button "More about this" [ref=f2e33] [cursor=pointer]
+          - link "Open NEBULITH planetary explorer" [ref=f2e34] [cursor=pointer]:
+            - /url: https://nebulith.netlify.app/
+            - img "NEBULITH planetary explorer interface with an interactive Earth globe" [ref=f2e35]
+            - generic [ref=f2e36]: OPEN PROJECT ↗
+          - generic [ref=f2e37]: React / Three.js / FastAPI
+        - article [ref=f2e39]:
+          - generic [ref=f2e40]:
+            - heading "VisionVault" [level=3] [ref=f2e41]
+            - paragraph [ref=f2e42]: A local-first photo library for finding images by face, designed to keep the library and face data on your machine.
+            - link "Source ↗" [ref=f2e44] [cursor=pointer]:
+              - /url: https://github.com/yugal-07/VisionVault
+            - button "More about this" [ref=f2e45] [cursor=pointer]
+          - generic [ref=f2e47]:
+            - generic [ref=f2e48]: LOCAL PHOTO LIBRARY
+            - generic [ref=f2e49]: ◉◌◉◌◌◉
+          - generic [ref=f2e50]: Java / ONNX
+        - article [ref=f2e52]:
+          - generic [ref=f2e53]:
+            - heading "AscentOptima" [level=3] [ref=f2e54]
+            - paragraph [ref=f2e55]: A campus elevator simulation for exploring dispatch strategies, demand spikes, and what-if scenarios.
+            - link "Source ↗" [ref=f2e57] [cursor=pointer]:
+              - /url: https://github.com/udbhav-metla/AscentOptima
+            - button "More about this" [ref=f2e58] [cursor=pointer]
+          - generic [ref=f2e60]: FLOOR 06 ──────── FLOOR 01
+          - generic [ref=f2e61]: React / TypeScript / Three.js
+        - article [ref=f2e63]:
+          - generic [ref=f2e64]:
+            - heading "WordFetch" [level=3] [ref=f2e65]
+            - paragraph [ref=f2e66]: "A tiny desktop utility: highlight a word, press a hotkey, and get its definition without leaving what you’re doing."
+            - link "Source ↗" [ref=f2e68] [cursor=pointer]:
+              - /url: https://github.com/yugal-07/WordFetch
+            - button "More about this" [ref=f2e69] [cursor=pointer]
+          - generic [ref=f2e71]:
+            - text: WORD / 024
+            - strong [ref=f2e72]: serendipity
+            - text: /ˌser.ənˈdɪp.ə.ti/
+            - separator [ref=f2e73]
+            - paragraph [ref=f2e74]: finding something good without looking for it.
+            - text: CTRLM
+          - generic [ref=f2e75]: Python
+    - region "Skills" [ref=f2e77]:
+      - generic [ref=f2e78]:
+        - generic [ref=f2e79]:
+          - paragraph [ref=f2e80]: Tools used across my projects
+          - heading "Skills" [level=2] [ref=f2e81]
+        - paragraph [ref=f2e82]: Things I’ve learnedby making.
+      - generic [ref=f2e83]:
+        - generic [ref=f2e84]:
+          - generic [ref=f2e85]: FRONTEND
+          - paragraph [ref=f2e86]: React · TypeScript · Three.js · JavaScript · CSS
+        - generic [ref=f2e87]:
+          - generic [ref=f2e88]: BACKEND & SYSTEMS
+          - paragraph [ref=f2e89]: Python · FastAPI · Java · C++ · SQLite
+        - generic [ref=f2e90]:
+          - generic [ref=f2e91]: INTERESTS
+          - paragraph [ref=f2e92]: Interactive systems · 3D on the web · Local-first software
+    - region "Learning by making real things." [ref=f2e93]:
+      - generic [ref=f2e94]:
+        - heading [level=2] [ref=f2e95]:
+          - text: Learning bymaking
+          - emphasis [ref=f2e96]: real things.
+        - generic [ref=f2e97]:
+          - paragraph [ref=f2e98]: I’m studying Computer Science and Engineering, and I learn best when I can take an idea apart and build a version of it myself.
+          - paragraph [ref=f2e99]: "My projects tend to sit where software meets something tangible: a planet you can explore, an elevator system you can simulate, or a small tool that makes an everyday task quicker."
+          - paragraph [ref=f2e100]: Currently studying, experimenting, and figuring out what to build next.
+    - generic [ref=f2e102]:
+      - paragraph [ref=f2e103]: Have something interesting in mind?
+      - heading [level=2] [ref=f2e104]:
+        - text: Let’s make
+        - emphasis [ref=f2e105]: something useful.
+      - paragraph [ref=f2e106]: I’m open to conversations about projects, internships, and good problems to learn from.
+      - generic [ref=f2e107]:
+        - generic [ref=f2e108]: Email link not added yet
+        - link "GITHUB ↗" [ref=f2e109] [cursor=pointer]:
+          - /url: https://github.com/yugal-07
+        - generic [ref=f2e110]: LinkedIn link not added yet
+        - link "BACK TO TOP ↑" [ref=f2e111] [cursor=pointer]:
+          - /url: "#home"
+  - contentinfo [ref=f2e112]:
+    - link "Yugal Sunil Patil" [ref=f2e113] [cursor=pointer]:
+      - /url: "#home"
+    - text: DESIGNED & BUILT WITH CURIOSITY© 2026
