@@ -560,14 +560,87 @@ terminalBar.addEventListener('pointercancel', stopTerminalDrag);
 
 if (!reduceMotion && 'IntersectionObserver' in window) {
   document.documentElement.classList.add('reveal-ready');
+  const titleRevealTargets = [
+    ...document.querySelectorAll('.section-heading'),
+    document.querySelector('.about h2'),
+    document.querySelector('.contact h2'),
+  ].filter(Boolean);
+  titleRevealTargets.forEach((target) => {
+    const title = target.matches('h2') ? target : target.querySelector('h2');
+    const label = title.innerText.replace(/\s+/g, ' ').trim();
+    const textNodes = [];
+    const walker = document.createTreeWalker(title, NodeFilter.SHOW_TEXT);
+    while (walker.nextNode()) textNodes.push(walker.currentNode);
+    const letters = [];
+    textNodes.forEach((node) => {
+      const fragment = document.createDocumentFragment();
+      let word;
+      [...node.textContent].forEach((character) => {
+        if (/\s/.test(character)) {
+          word = null;
+          fragment.append(character);
+          return;
+        }
+        if (!word) {
+          word = document.createElement('span');
+          word.className = 'title-word';
+          fragment.append(word);
+        }
+        const letter = document.createElement('span');
+        letter.className = 'title-letter';
+        letter.dataset.letter = character;
+        letter.textContent = character;
+        letter.setAttribute('aria-hidden', 'true');
+        letters.push(letter);
+        word.append(letter);
+      });
+      node.replaceWith(fragment);
+    });
+    letters.forEach((letter, index) => {
+      letter.style.setProperty('--outline-delay', `${index * 10}ms`);
+      letter.style.setProperty('--fill-delay', `${380 + letters.length * 10 + index * 28}ms`);
+    });
+    title.setAttribute('aria-label', label);
+    target.classList.add('title-reveal');
+    console.assert(title.innerText.replace(/\s+/g, ' ').trim() === label, 'Title reveal must preserve its heading text');
+  });
+  const titlePlaybackRateFor = (speed) => Math.min(3, Math.max(0.6, 0.6 + speed * 1.2));
+  console.assert(titlePlaybackRateFor(0) === 0.6 && titlePlaybackRateFor(10) === 3, 'Title playback rate must stay usable');
+  let titleScrollPosition = desktopLayout.matches ? scroller.scrollLeft : scrollY;
+  let titleScrollTime = performance.now();
+  let titlePlaybackRate = 1;
+  const applyTitlePlaybackRate = (target) => {
+    target.getAnimations({subtree: true}).forEach((animation) => animation.updatePlaybackRate(titlePlaybackRate));
+  };
+  const updateTitlePlaybackRate = () => {
+    const now = performance.now();
+    const position = desktopLayout.matches ? scroller.scrollLeft : scrollY;
+    const elapsed = Math.min(32, Math.max(8, now - titleScrollTime));
+    titlePlaybackRate = titlePlaybackRateFor(Math.abs(position - titleScrollPosition) / elapsed);
+    titleScrollPosition = position;
+    titleScrollTime = now;
+    document.querySelectorAll('.title-reveal.is-visible').forEach(applyTitlePlaybackRate);
+  };
+  window.addEventListener('scroll', updateTitlePlaybackRate, {passive: true});
+  scroller.addEventListener('scroll', updateTitlePlaybackRate, {passive: true});
+  const revealRoot = desktopLayout.matches ? scroller : null;
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;
       entry.target.classList.add('is-visible');
       revealObserver.unobserve(entry.target);
     });
-  }, {root: desktopLayout.matches ? scroller : null, threshold: 0.12});
-  document.querySelectorAll('.hero h1, .hero-bottom, .hero-visual, .section-heading, .project, .skill-list > div, .about-copy > *, .contact > *').forEach((element, index) => {
+  }, {root: revealRoot, threshold: 0.12});
+  const titleRevealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      applyTitlePlaybackRate(entry.target);
+      titleRevealObserver.unobserve(entry.target);
+    });
+  }, {root: revealRoot, rootMargin: desktopLayout.matches ? '0px -60% 0px 0px' : '0px 0px -25% 0px', threshold: 0});
+  titleRevealTargets.forEach((target) => titleRevealObserver.observe(target));
+  [...document.querySelectorAll('.hero h1, .hero-bottom, .hero-visual, .section-heading, .project, .skill-list > div, .about h2, .about-copy > *, .contact > *')].filter((element) => !element.classList.contains('title-reveal')).forEach((element, index) => {
     element.style.setProperty('--reveal-delay', `${Math.min(index % 5, 4) * 80}ms`);
     revealObserver.observe(element);
   });

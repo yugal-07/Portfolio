@@ -14,3 +14,14 @@
 @media(min-width:768px){.hero-visual{width:min(100%,60vh,560px);top:clamp(-28px,-3vh,-14px)}.ascii-portrait{transform:translateY(clamp(-135px,-15vh,-85px)) scale(1.32)}}
 @media(hover:hover) and (prefers-reduced-motion:no-preference){.project{position:relative}.project-art{transform-origin:50% 75%;transition:transform .32s cubic-bezier(.2,.8,.2,1),box-shadow .32s ease}.project:hover,.project:focus-within{z-index:2}.project:hover .project-art,.project:focus-within .project-art{transform:translateY(-8px) scale(1.065);box-shadow:0 18px 45px #0007}}
 .hero h1{text-transform:none}
+
+@media(prefers-reduced-motion:no-preference){
+  .reveal-ready .title-reveal{opacity:1;transform:none;transition:none}
+  .reveal-ready .title-reveal .title-word{display:inline-block;white-space:nowrap}
+  .reveal-ready .title-reveal .title-letter{display:inline-block;position:relative;vertical-align:baseline;color:transparent;-webkit-text-stroke:1px #e8e7e240;clip-path:inset(46% 42%);opacity:0}
+  .reveal-ready .title-reveal .title-letter::after{content:attr(data-letter);position:absolute;left:0;top:0;width:100%;color:var(--ink);-webkit-text-stroke:1px var(--ink);clip-path:inset(-8% 110% -8% -8%)}
+  .reveal-ready .title-reveal.is-visible .title-letter{animation:title-outline .26s cubic-bezier(.2,.75,.2,1) var(--outline-delay) forwards}
+  .reveal-ready .title-reveal.is-visible .title-letter::after{animation:title-fill .07s linear var(--fill-delay) forwards}
+  @keyframes title-outline{35%{opacity:.45}to{clip-path:inset(-8%);opacity:1}}
+  @keyframes title-fill{to{clip-path:inset(-8%)}}
+}
