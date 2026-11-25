@@ -25,3 +25,4 @@
   @keyframes title-outline{35%{opacity:.45}to{clip-path:inset(-8%);opacity:1}}
   @keyframes title-fill{to{clip-path:inset(-8%)}}
 }
+.art-vision img{object-fit:contain;background:#f4f7fb}

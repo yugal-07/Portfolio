@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+  <defs>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#e8e7e2" stroke-opacity=".045" />
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#000" flood-opacity=".45" />
+    </filter>
+    <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000" flood-opacity=".35" />
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="#171a19" />
+  <rect width="1600" height="1000" fill="url(#grid)" />
+  <circle cx="1450" cy="94" r="180" fill="#84a98c" opacity=".06" />
+  <circle cx="88" cy="912" r="230" fill="#d6a85f" opacity=".045" />
+
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(72 58)">
+      <rect width="44" height="44" rx="4" fill="#e8e7e2" />
+      <path d="M11 12h9c5 0 8 3 8 8v13c-2-3-5-4-8-4h-9zm22 0h-5c3 2 5 5 5 9z" fill="#171a19" />
+      <text x="64" y="20" fill="#e8e7e2" font-size="20" font-weight="700" letter-spacing="3">WORDFETCH</text>
+      <text x="64" y="42" fill="#a19e96" font-family="monospace" font-size="13" letter-spacing="2">SELECT · SHORTCUT · DEFINE</text>
+    </g>
+    <g transform="translate(1320 70)" font-family="monospace" font-size="13" letter-spacing="2">
+      <circle cx="0" cy="9" r="5" fill="#84a98c" />
+      <text x="18" y="14" fill="#a19e96">LOCAL / OFFLINE</text>
+    </g>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="72" y="154" width="956" height="744" rx="10" fill="#202422" stroke="#e8e7e2" stroke-opacity=".18" />
+    <path d="M72 230h956" stroke="#e8e7e2" stroke-opacity=".14" />
+    <circle cx="111" cy="192" r="7" fill="#d6a85f" />
+    <circle cx="137" cy="192" r="7" fill="#a19e96" opacity=".6" />
+    <circle cx="163" cy="192" r="7" fill="#84a98c" />
+    <text x="210" y="198" fill="#a19e96" font-family="monospace" font-size="15" letter-spacing="2">notes.txt</text>
+    <path d="M196 230v668" stroke="#e8e7e2" stroke-opacity=".09" />
+
+    <g fill="#777a75" font-family="monospace" font-size="16" text-anchor="end">
+      <text x="164" y="337">01</text>
+      <text x="164" y="420">02</text>
+      <text x="164" y="537">03</text>
+      <text x="164" y="644">04</text>
+    </g>
+    <g fill="#d7d6d0" font-family="monospace" font-size="27">
+      <text x="246" y="337">A useful tool should disappear</text>
+      <text x="246" y="420">into the work around it.</text>
+      <text x="246" y="537">Sometimes</text>
+      <text x="246" y="644">one shortcut away.</text>
+    </g>
+
+    <g filter="url(#soft-shadow)">
+      <rect x="410" y="479" width="370" height="82" rx="5" fill="#d6a85f" />
+      <text x="438" y="534" fill="#171a19" font-family="monospace" font-size="31" font-weight="700">serendipity</text>
+      <path d="M410 572v18m370-18v18" stroke="#d6a85f" stroke-width="3" />
+    </g>
+
+    <g opacity=".26" fill="#a19e96">
+      <rect x="246" y="710" width="448" height="12" rx="6" />
+      <rect x="246" y="748" width="572" height="12" rx="6" />
+      <rect x="246" y="786" width="366" height="12" rx="6" />
+    </g>
+  </g>
+
+  <path d="M780 520h76" stroke="#d6a85f" stroke-width="3" stroke-dasharray="7 8" />
+  <circle cx="856" cy="520" r="7" fill="#d6a85f" />
+
+  <g filter="url(#shadow)">
+    <rect x="838" y="256" width="690" height="460" rx="12" fill="#0f1211" stroke="#84a98c" stroke-width="2" />
+    <rect x="838" y="256" width="690" height="76" rx="12" fill="#181d1b" />
+    <path d="M838 320h690" stroke="#84a98c" stroke-opacity=".35" />
+    <g transform="translate(874 278)">
+      <rect width="34" height="34" rx="4" fill="#84a98c" />
+      <path d="M9 10h7c4 0 6 2 6 6v10c-2-2-4-3-6-3H9zm17 0h-4c2 2 4 4 4 7z" fill="#0f1211" />
+      <text x="54" y="23" fill="#e8e7e2" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="2">WORDFETCH / DEFINITION</text>
+    </g>
+    <rect x="1382" y="278" width="108" height="32" rx="16" fill="#84a98c" fill-opacity=".14" stroke="#84a98c" stroke-opacity=".5" />
+    <text x="1436" y="299" text-anchor="middle" fill="#9bc0a3" font-family="monospace" font-size="12" letter-spacing="1">OFFLINE</text>
+
+    <text x="890" y="419" fill="#e8e7e2" font-family="Arial, sans-serif" font-size="62" font-weight="700" letter-spacing="-2">serendipity</text>
+    <text x="893" y="457" fill="#a19e96" font-family="monospace" font-size="19">/ˌser.ənˈdɪp.ə.ti/</text>
+    <path d="M890 492h586" stroke="#e8e7e2" stroke-opacity=".16" />
+    <text x="890" y="554" fill="#d7d6d0" font-family="Arial, sans-serif" font-size="26">an unexpected, happy</text>
+    <text x="890" y="592" fill="#d7d6d0" font-family="Arial, sans-serif" font-size="26">discovery.</text>
+    <circle cx="898" cy="656" r="5" fill="#84a98c" />
+    <text x="916" y="661" fill="#a19e96" font-family="monospace" font-size="13" letter-spacing="2">LOCAL DICTIONARY · READY</text>
+  </g>
+
+  <g transform="translate(1016 776)" filter="url(#soft-shadow)">
+    <rect width="148" height="92" rx="8" fill="#242826" stroke="#e8e7e2" stroke-opacity=".28" />
+    <path d="M10 76h128" stroke="#0c0f0e" stroke-width="5" opacity=".65" />
+    <text x="74" y="55" text-anchor="middle" fill="#e8e7e2" font-family="monospace" font-size="24" font-weight="700">CTRL</text>
+    <text x="187" y="55" text-anchor="middle" fill="#a19e96" font-family="Arial, sans-serif" font-size="25">+</text>
+    <rect x="226" width="92" height="92" rx="8" fill="#242826" stroke="#e8e7e2" stroke-opacity=".28" />
+    <path d="M236 76h72" stroke="#0c0f0e" stroke-width="5" opacity=".65" />
+    <text x="272" y="55" text-anchor="middle" fill="#e8e7e2" font-family="monospace" font-size="25" font-weight="700">M</text>
+    <text x="350" y="35" fill="#a19e96" font-family="monospace" font-size="13" letter-spacing="2">FETCH</text>
+    <text x="350" y="58" fill="#a19e96" font-family="monospace" font-size="13" letter-spacing="2">DEFINITION</text>
+  </g>
+</svg>
